@@ -1,4 +1,4 @@
-package loose.coupling;
+package IOC;
 
 public class UserManager {
     private UserDataProvider userDatabaseProvider;

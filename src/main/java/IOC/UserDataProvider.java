@@ -1,5 +1,5 @@
-package loose.coupling;
+package IOC;
 
 public interface UserDataProvider {
-    public String getUserDetails();
+    String getUserDetails();
 }

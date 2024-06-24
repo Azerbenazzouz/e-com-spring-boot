@@ -1,6 +1,6 @@
-package loose.coupling;
+package IOC;
 
-public class UserDatabase implements UserDataProvider{
+public class UserDatabase implements UserDataProvider {
     @Override
     public String getUserDetails(){
         return "User details from database";

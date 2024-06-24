@@ -1,8 +1,13 @@
 package coupling;
 
 public class UserManager {
-    private UserDatabase userDatabase = new UserDatabase();
+    private UserDataProvider userDatabaseProvider;
+
+    public UserManager(UserDataProvider userDatabaseProvider){
+        this.userDatabaseProvider = userDatabaseProvider;
+    }
+
     public String getUserInfo(){
-        return userDatabase.getUserDetails();
+        return userDatabaseProvider.getUserDetails();
     }
 }
